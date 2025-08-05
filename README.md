@@ -105,13 +105,14 @@ The environment consists of four integrated layers:
 
 ```
 ai-mcp-template/
-├── configs/
+├── configs/                     # Configuration templates
 │   ├── claude-desktop/          # Claude Desktop configurations
 │   ├── vscode/                  # VSCode settings and extensions
 │   └── mcp-servers/             # Individual MCP server configs
 ├── scripts/                     # Setup and installation scripts
 ├── docs/                        # Comprehensive documentation
 ├── examples/                    # Example configurations and workflows
+├── copilot-instructions.md      # AI agent guardrails and standards
 ├── .env.example                 # Environment variables template
 └── README.md                    # This file
 ```
@@ -149,6 +150,7 @@ Recommended extensions and settings are automatically applied. See `configs/vsco
 - [**Troubleshooting Guide**](docs/troubleshooting.md) - Common issues and solutions
 - [**Best Practices**](docs/best-practices.md) - Professional usage patterns
 - [**Security Guidelines**](docs/security.md) - API key management and security
+- [**AI Agent Instructions**](copilot-instructions.md) - Guardrails and standards for AI-generated code
 
 ## 🔒 Security
 
