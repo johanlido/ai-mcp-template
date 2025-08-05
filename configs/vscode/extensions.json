@@ -1,0 +1,72 @@
+{
+  "recommendations": [
+    // GitHub Copilot - Essential for AI-assisted development
+    "github.copilot",
+    "github.copilot-chat",
+    
+    // Code Formatting and Quality
+    "esbenp.prettier-vscode",
+    "ms-python.black-formatter",
+    "ms-python.pylint",
+    "ms-python.flake8",
+    "bradlc.vscode-tailwindcss",
+    
+    // Language Support
+    "ms-python.python",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-markdown",
+    
+    // Git Integration
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    
+    // Development Tools
+    "ms-vscode.vscode-thunder-client",
+    "humao.rest-client",
+    "ms-vscode.vscode-docker",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    
+    // AI and MCP Development
+    "ms-toolsai.jupyter",
+    "ms-vscode.vscode-ai-toolkit",
+    "anthropic.claude-dev",
+    
+    // Productivity
+    "ms-vscode.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+    "alefragnani.bookmarks",
+    "ms-vscode.vscode-outline-map",
+    
+    // Theme and UI
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme",
+    "ms-vscode.vscode-theme-github-light",
+    
+    // Web Development (Optional - uncomment if needed)
+    // "ms-vscode.vscode-html-css-support",
+    // "ms-vscode.vscode-emmet",
+    // "ms-vscode.vscode-live-server",
+    // "ms-vscode.vscode-sass",
+    
+    // Mobile Development (Optional - uncomment if needed)
+    // "ms-vscode.vscode-react-native",
+    // "ms-vscode.vscode-flutter",
+    // "dart-code.dart-code",
+    
+    // Data Science (Optional - uncomment if needed)
+    // "ms-toolsai.vscode-ai",
+    // "ms-python.vscode-pylance",
+    // "ms-toolsai.jupyter-keymap",
+    // "ms-toolsai.jupyter-renderers"
+  ],
+  "unwantedRecommendations": [
+    // Extensions that might conflict with our setup
+    "ms-vscode.vscode-typescript",
+    "hookyqr.beautify",
+    "ms-vscode.vscode-eslint-language-server"
+  ]
+}
+
