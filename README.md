@@ -124,8 +124,8 @@ cp .env.example .env
 ### Step 3: Platform-Specific Guides
 
 - **📱 macOS**: [Complete macOS Setup Guide](docs/getting-started/setup-macos.md)
-- **🪟 Windows**: [Windows Setup Guide](docs/getting-started/setup-windows.md)
-- **🐧 Linux**: [Linux Setup Guide](docs/getting-started/setup-linux.md)
+- **🪟 Windows**: [Windows Setup Guide](docs/setup-guide.md) (Universal setup guide)
+- **🐧 Linux**: [Linux Setup Guide](docs/setup-guide.md) (Universal setup guide)
 
 ### Step 4: Verify Installation
 
@@ -153,18 +153,16 @@ ai-mcp-template/
 │   └── configure-claude.sh     # Claude Desktop configuration
 ├── docs/                        # Comprehensive documentation
 │   ├── getting-started/         # Platform-specific setup guides
-│   │   ├── setup-macos.md      # macOS installation guide
-│   │   ├── setup-windows.md    # Windows installation guide
-│   │   └── setup-linux.md      # Linux installation guide
+│   │   └── setup-macos.md      # macOS installation guide
 │   ├── guides/                  # Usage and configuration guides
-│   │   ├── troubleshooting.md  # Comprehensive troubleshooting
-│   │   ├── customization.md    # Team customization guide
-│   │   └── security.md         # Security best practices
+│   │   └── troubleshooting.md  # Comprehensive troubleshooting
 │   ├── examples/                # Example workflows and configurations
-│   │   ├── workflows/          # Step-by-step development workflows
-│   │   ├── configurations/     # Sample configurations
-│   │   └── integrations/       # Third-party integrations
-│   └── api/                     # MCP protocol and development docs
+│   │   └── workflows/          # Step-by-step development workflows
+│   │       ├── frontend-development.md    # Frontend workflow
+│   │       └── backend-authentication.md  # Backend workflow
+│   ├── setup-guide.md          # Universal setup guide
+│   ├── troubleshooting.md      # Main troubleshooting guide
+│   └── best-practices.md       # Professional usage patterns
 ├── copilot-instructions.md      # AI agent guardrails and standards
 ├── .env.example                 # Environment variables template
 └── README.md                    # This file
@@ -190,7 +188,7 @@ FIGMA_ACCESS_TOKEN=your_figma_token_here
 
 ### Claude Desktop Setup
 
-The setup script automatically configures Claude Desktop with all MCP servers. Manual configuration details are available in `docs/claude-desktop-setup.md`.
+The setup script automatically configures Claude Desktop with all MCP servers. Manual configuration details are available in the setup guide.
 
 ### VSCode Configuration
 
@@ -200,19 +198,17 @@ Recommended extensions and settings are automatically applied. See `configs/vsco
 
 ### 🚀 Getting Started
 - [**macOS Setup Guide**](docs/getting-started/setup-macos.md) - Complete macOS installation
-- [**Windows Setup Guide**](docs/getting-started/setup-windows.md) - Windows-specific instructions
-- [**Linux Setup Guide**](docs/getting-started/setup-linux.md) - Linux installation guide
+- [**Universal Setup Guide**](docs/setup-guide.md) - Windows and Linux instructions
+- [**Troubleshooting Guide**](docs/troubleshooting.md) - Common issues and solutions
 
 ### 📖 Usage Guides
 - [**Comprehensive Troubleshooting**](docs/guides/troubleshooting.md) - Solve common issues
-- [**Team Customization Guide**](docs/guides/customization.md) - Adapt for your team
-- [**Security Best Practices**](docs/guides/security.md) - Secure your AI environment
+- [**Team Customization Guide**](TEMPLATE_CUSTOMIZATION.md) - Adapt for your team
 - [**Best Practices**](docs/best-practices.md) - Professional usage patterns
 
 ### 💡 Example Workflows
 - [**Frontend Development**](docs/examples/workflows/frontend-development.md) - React dashboard with AI
 - [**Backend Authentication**](docs/examples/workflows/backend-authentication.md) - Secure auth system
-- [**Full-Stack Integration**](docs/examples/workflows/fullstack-integration.md) - Complete app development
 
 ### 🤖 AI Guidelines
 - [**AI Agent Instructions**](copilot-instructions.md) - Guardrails and standards for AI-generated code
@@ -222,7 +218,7 @@ Recommended extensions and settings are automatically applied. See `configs/vsco
 - API keys are managed through environment variables
 - Configuration files use placeholders for sensitive data
 - Setup scripts include security validation
-- See [Security Guidelines](docs/security.md) for complete details
+- See [Best Practices Guide](docs/best-practices.md) for complete details
 
 ## 🎯 Usage Examples
 
@@ -249,7 +245,7 @@ Ask Claude: "Search for the latest React 18 performance optimizations"
 1. Create configuration in `configs/mcp-servers/new-server/`
 2. Add installation script in `scripts/install-new-server.sh`
 3. Update Claude Desktop configuration
-4. Document in `docs/mcp-servers.md`
+4. Document in the main README.md
 
 ### Team Deployment
 
